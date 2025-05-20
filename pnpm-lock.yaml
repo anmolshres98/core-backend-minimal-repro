@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@itwin/core-backend@5.0.0-dev.114':
+    hash: hkwgjec5iuqcjwyozuhfkusj5e
+    path: patches/@itwin__core-backend@5.0.0-dev.114.patch
+
 importers:
 
   .:
     dependencies:
       '@itwin/core-backend':
         specifier: 5.0.0-dev.114
-        version: 5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1))(@itwin/core-geometry@4.11.1)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))
+        version: 5.0.0-dev.114(patch_hash=hkwgjec5iuqcjwyozuhfkusj5e)(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1))(@itwin/core-geometry@4.11.1)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))
       '@itwin/core-bentley':
         specifier: 5.0.0-dev.114
         version: 5.0.0-dev.114
@@ -653,7 +658,7 @@ snapshots:
       inversify: 6.0.3
       reflect-metadata: 0.1.14
 
-  '@itwin/core-backend@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1))(@itwin/core-geometry@4.11.1)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))':
+  '@itwin/core-backend@5.0.0-dev.114(patch_hash=hkwgjec5iuqcjwyozuhfkusj5e)(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1))(@itwin/core-geometry@4.11.1)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))':
     dependencies:
       '@bentley/imodeljs-native': 5.0.103
       '@itwin/cloud-agnostic-core': 2.3.0(inversify@6.0.3)(reflect-metadata@0.1.14)
