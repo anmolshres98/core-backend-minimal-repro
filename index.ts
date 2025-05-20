@@ -29,7 +29,7 @@ async function main() {
     );
 
     iModel.saveChanges("Created spatial category");
-    // Throwing error: BE_SQLITE_LOCKED
+    // Throwing error: BE_SQLITE_LOCKED in rc; doesn't throw in latest official release
     iModel.performCheckpoint();
     iModel.close();
 
