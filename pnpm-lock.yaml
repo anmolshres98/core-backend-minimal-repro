@@ -4,19 +4,20 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@itwin/core-backend@5.0.0-dev.114':
-    hash: hkwgjec5iuqcjwyozuhfkusj5e
-    path: patches/@itwin__core-backend@5.0.0-dev.114.patch
-
 importers:
 
   .:
     dependencies:
       '@itwin/core-backend':
         specifier: 5.0.0-dev.114
-        version: 5.0.0-dev.114(patch_hash=hkwgjec5iuqcjwyozuhfkusj5e)(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1))(@itwin/core-geometry@4.11.1)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))
+        version: 5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@5.0.0-dev.114))(@itwin/core-geometry@5.0.0-dev.114)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))
       '@itwin/core-bentley':
+        specifier: 5.0.0-dev.114
+        version: 5.0.0-dev.114
+      '@itwin/core-common':
+        specifier: 5.0.0-dev.114
+        version: 5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@5.0.0-dev.114)
+      '@itwin/core-geometry':
         specifier: 5.0.0-dev.114
         version: 5.0.0-dev.114
     devDependencies:
@@ -111,20 +112,17 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@itwin/core-bentley@4.11.1':
-    resolution: {integrity: sha512-ylzadB/lDnQ9nfdmM2M5PA0oP0DpseSDy47jd3sD/UWZdeKDgtvDm1u5p8ASSJeE8eO7fryqB8Gab3VPuj7tgw==}
-
   '@itwin/core-bentley@5.0.0-dev.114':
     resolution: {integrity: sha512-qdM2mrkLrFbsZajmwmVpq1KBsHrz1IF2dwMF+8DlclTsqZtkvYfca6CJNi05yQfo8/cxH3htdFqXY6hgBbPXbw==}
 
-  '@itwin/core-common@4.11.1':
-    resolution: {integrity: sha512-L6isG4FYdJcw0u+aTv+H1XMUBd108BkN6rKBcFLu651tCgbz5UwLEy5JEbLr8FO0woyc6RBsoQeXHWEObU+/Ng==}
+  '@itwin/core-common@5.0.0-dev.114':
+    resolution: {integrity: sha512-wCRQ4wOMdsdhv2Q02w/VPlSRILwYNOSEGbR8j+1Ks7a5g9aYt/VEsSj2v+JDklXvnajU1gvlJYcQTwYrypGuDg==}
     peerDependencies:
-      '@itwin/core-bentley': ^4.11.1
-      '@itwin/core-geometry': ^4.11.1
+      '@itwin/core-bentley': 5.0.0-dev.114
+      '@itwin/core-geometry': 5.0.0-dev.114
 
-  '@itwin/core-geometry@4.11.1':
-    resolution: {integrity: sha512-FkpqjjiyccY6u/VUdWiaaR2m6k23PdU875sdPPo5w0cQlhA+4oa2FooYsyVA90wjpPY4pEOlQX9W+HVP9vkF9A==}
+  '@itwin/core-geometry@5.0.0-dev.114':
+    resolution: {integrity: sha512-8+hja5kNWNHK3j5rvQL9SKZ/9SgauuE+todE3IYPPolsIGEGLQlpceFPcLoU/KZ9r9IOF2cUEboFaYLY/vbrhw==}
 
   '@itwin/core-quantity@5.0.0-dev.114':
     resolution: {integrity: sha512-iHh937XeWixXXFn3betMWL7ULpduRzVnEtGfZfY8CE/fAo6QDkdfeEWNqNEABHZCdMSz2TzEFp8lhMOTyTcfrg==}
@@ -658,13 +656,13 @@ snapshots:
       inversify: 6.0.3
       reflect-metadata: 0.1.14
 
-  '@itwin/core-backend@5.0.0-dev.114(patch_hash=hkwgjec5iuqcjwyozuhfkusj5e)(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1))(@itwin/core-geometry@4.11.1)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))':
+  '@itwin/core-backend@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-common@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@5.0.0-dev.114))(@itwin/core-geometry@5.0.0-dev.114)(@itwin/ecschema-metadata@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)))':
     dependencies:
       '@bentley/imodeljs-native': 5.0.103
       '@itwin/cloud-agnostic-core': 2.3.0(inversify@6.0.3)(reflect-metadata@0.1.14)
       '@itwin/core-bentley': 5.0.0-dev.114
-      '@itwin/core-common': 4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1)
-      '@itwin/core-geometry': 4.11.1
+      '@itwin/core-common': 5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@5.0.0-dev.114)
+      '@itwin/core-geometry': 5.0.0-dev.114
       '@itwin/ecschema-metadata': 5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114))
       '@itwin/object-storage-azure': 2.3.0(inversify@6.0.3)(reflect-metadata@0.1.14)
       '@itwin/object-storage-core': 2.3.0(inversify@6.0.3)(reflect-metadata@0.1.14)
@@ -684,20 +682,18 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@itwin/core-bentley@4.11.1': {}
-
   '@itwin/core-bentley@5.0.0-dev.114': {}
 
-  '@itwin/core-common@4.11.1(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@4.11.1)':
+  '@itwin/core-common@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)(@itwin/core-geometry@5.0.0-dev.114)':
     dependencies:
       '@itwin/core-bentley': 5.0.0-dev.114
-      '@itwin/core-geometry': 4.11.1
+      '@itwin/core-geometry': 5.0.0-dev.114
       flatbuffers: 1.12.0
       js-base64: 3.7.7
 
-  '@itwin/core-geometry@4.11.1':
+  '@itwin/core-geometry@5.0.0-dev.114':
     dependencies:
-      '@itwin/core-bentley': 4.11.1
+      '@itwin/core-bentley': 5.0.0-dev.114
       flatbuffers: 1.12.0
 
   '@itwin/core-quantity@5.0.0-dev.114(@itwin/core-bentley@5.0.0-dev.114)':

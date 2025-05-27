@@ -10,6 +10,7 @@
     "clean:build:start": "pnpm clean:build && pnpm start",
     "build:watch": "tsc --watch",
     "clean": "rimraf lib bim-location",
+    "clean:node_modules": "rimraf node_modules",
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,16 +19,13 @@
   "packageManager": "pnpm@9.15.9+sha256.cf86a7ad764406395d4286a6d09d730711720acc6d93e9dce9ac7ac4dc4a28a7",
   "dependencies": {
     "@itwin/core-backend": "5.0.0-dev.114",
-    "@itwin/core-bentley": "5.0.0-dev.114"
+    "@itwin/core-bentley": "5.0.0-dev.114",
+    "@itwin/core-common": "5.0.0-dev.114",
+    "@itwin/core-geometry": "5.0.0-dev.114"
   },
   "devDependencies": {
     "@types/node": "^22.15.19",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@itwin/core-backend@5.0.0-dev.114": "patches/@itwin__core-backend@5.0.0-dev.114.patch"
-    }
   }
 }
